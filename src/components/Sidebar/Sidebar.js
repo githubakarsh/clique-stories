@@ -1,13 +1,16 @@
-const Sidebar = ({
-}) => {
-    return <>
-    <ul>
-            <li>Side bar 1</li>
-            <li>Side bar 2</li>
-            <li>Side bar 3</li>
-            <li>Side bar 4</li>
-        </ul></>
-}
+import "./sidebar.scss";
+
+const Sidebar = ({}) => {
+  return (
+    <nav className="sidebar-nav">
+      <ul className="sidebar-list">
+        <li>Side bar 1</li>
+        <li>Side bar 2</li>
+        <li>Side bar 3</li>
+        <li>Side bar 4</li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Sidebar;
-

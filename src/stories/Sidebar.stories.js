@@ -9,7 +9,7 @@ export default {
 
 const Template = (args) => <Sidebar {...args}/>;
 
-const ExampleSidebar = Template.bind({});
+export const ExampleSidebar = Template.bind({});
 ExampleSidebar.args = {
 
 }

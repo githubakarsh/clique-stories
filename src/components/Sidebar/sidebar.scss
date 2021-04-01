@@ -1,0 +1,22 @@
+.sidebar-nav {
+    width: 350px;
+    padding: 0;
+    font-size: 18px;
+    background-color: #E8E8E8;
+    height: 100vh;
+}
+
+.sidebar-list {
+    padding: 0;
+    list-style-type: none;
+    cursor: pointer;
+    li {
+        border-bottom: 1px solid black;
+        padding-left: 10px;
+        padding-top: 12px;
+        padding-bottom: 8px;
+    }
+    li:last-child {
+        border-bottom: none;
+    }
+}
