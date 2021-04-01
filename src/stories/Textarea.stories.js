@@ -8,7 +8,7 @@ export default {
 
 const Template = (args) => <InputField {...args} />;
 
-const TextArea = Template.bind({});
+export const TextArea = Template.bind({});
 TextArea.args = {
-  type: 'textarea'
+  type: 'text'
 }

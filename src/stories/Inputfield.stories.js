@@ -26,3 +26,10 @@ export default {
       length: 10
   }
 
+  export const DisabledInputField = Template.bind({});
+  DisabledInputField.args = {
+    type: 'text',
+    disabled: true,
+    value: 'John Smith'
+  }
+
