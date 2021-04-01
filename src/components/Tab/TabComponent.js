@@ -26,7 +26,7 @@ const TabComponent = ({
       
     <div className="tab-main">
       <div className="tabbers-main">
-        <nav>
+        <nav className="tab-nav">
         <ul>
           {tabNames.map((item, index) => {
               return <li onClick={() => setActiveTab(index)}>{item}</li>

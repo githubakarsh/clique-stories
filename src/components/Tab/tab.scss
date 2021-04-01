@@ -5,27 +5,30 @@
 .tabbers-main {
     border: 1px solid black;
 }
-
-
-
-ul {
-    list-style-type: none;
-    display: flex;
-    font-size: 18px;
-    width: auto;
-    margin: 0;
-    li {
-        padding-right: 5px;
-        cursor: pointer;
-        display: block;
-        box-sizing: border-box;
-        border-right: 1px solid black;
-        padding: 20px;
-    }
-    li:last-child {
-        border-right: none;
+.tab-nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+        font-size: 18px;
+        width: auto;
+        margin: 0;
+        padding-left: 0;
+        li {
+            padding-right: 5px;
+            cursor: pointer;
+            display: block;
+            box-sizing: border-box;
+            border-right: 1px solid black;
+            padding: 20px;
+        }
+        li:last-child {
+            border-right: none;
+        }
     }
 }
+
+
+
 
 .tab-content-container {
     border: 1px solid black;
