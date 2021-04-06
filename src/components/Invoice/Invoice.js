@@ -1,8 +1,29 @@
 import './invoice.scss';
+import { useState } from 'react';
 
+import { formatter } from '../../utils/formatter';
 const Invoice = ({
     invoiceNumber,
+    itemsHeader,
+    items,
+    tax
 }) => {
+    const [total, caltotal] = useState(0);
+    const [subTotal] = useState(() => {
+        const itemsList = [];
+        return items.map(item => {
+            const amount = parseInt(item.quantity) * parseInt(item.price)
+            itemsList.push(amount);
+            if(itemsList.length === items.length){
+                let tot = itemsList.reduce((sum, current) => {
+                    return parseInt(sum)+parseInt(current);
+                });
+                caltotal(parseInt(tot)+parseInt(tax));
+                return tot;
+            }
+        }, 0)
+    });
+    
     return <div className="invoice-main">
         <div className="invoice-title">
             <label className="invoice-header">invoice 
@@ -12,26 +33,20 @@ const Invoice = ({
         <div className="invoice-items-list">
             <table className="invoice-items-table">
                 <thead>
-                <tr>
-                    <th>Order number</th>
-                    <th>Description</th>
-                    <th>Qty</th>
-                    <th>Amount</th>
-                </tr>
+                    <tr>{itemsHeader.map((item, index) => {
+                        return <th key={index}>{item}</th>
+                    })}</tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>123-456-789</td>
-                    <td>Some random item 1</td>
-                    <td>1</td>
-                    <td>£123</td>
-                </tr>
-                <tr>
-                    <td>789-456-123</td>
-                    <td>Some random item 2</td>
-                    <td>1</td>
-                    <td>£456</td>
-                </tr>
+                {items.map((list, index) => {
+                    return <tr key={index}>
+                        <td>{list.orderNumber}</td>
+                        <td>{list.description}</td>
+                        <td>{list.quantity}</td>
+                        <td>{formatter(parseFloat(list.price))}</td>
+                        <td>{formatter(parseInt(list.quantity) * parseInt(list.price))}</td>
+                    </tr>;
+                })}
                 </tbody>
             </table>
         </div>
@@ -41,20 +56,28 @@ const Invoice = ({
                 <tbody>
                     <tr>
                         <td>Subtotal</td>
-                        <td>£579.00</td>
+                        <td>£{subTotal}</td>
                     </tr>
                     <tr>
                         <td>Tax</td>
-                        <td>£100.00</td>
+                        <td>{formatter(tax)}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div className="invoice-total">
-            <label className="invoice-total--label">total : <span className="invoice-total--amount">£679.00</span></label>
+            <label className="invoice-total--label">total : <span className="invoice-total--amount">{formatter(total)}</span></label>
         </div>
     </div>
+}
+
+Invoice.defaultProps = {
+    tax: 100,
+    invoiceNumber : '123456',
+    itemsHeader : ['Order number','Description','Qty','Price', 'Amount'],
+    items: [{ orderNumber: '123-456-789', description: 'Some random item 1', quantity: 1, price: 123},{ orderNumber: '789-456-123', description: 'Some random item 2', quantity: 2, price: 456}],
+
 }
 
 export default Invoice;
