@@ -31,24 +31,22 @@
 .invoice-items-table {
     box-sizing: border-box;
     th {
-        border-bottom: 1px solid lightgray;
-        padding: 8px;
-        margin: 8px;
+        border-bottom: 1px solid #f8d7da;
+        padding: 18px;
     }
     td {
-        border-bottom: 1px solid lightgray;
-        padding: 10px;
-        margin: 10px;
+        border-bottom: 1px solid #f8d7da;
+        padding: 16px;
     }
 }
 
 .invoice-subtotal {
-    margin-left: 265px;
+    margin-left: 315px;
 }
 
 .invoice-subtotal-table {
     td {
-        border-bottom: 1px solid lightgray;
+        border-bottom: 1px solid #f8d7da;
         padding: 10px;
         margin: 10px;
     }
@@ -60,9 +58,11 @@
     width: 380px;
     &--label {
         font-size: 24px;
+        color: #721c24;
     }
     &--amount {
         font-size: 30px;
+        color: black;
     }
 }
 

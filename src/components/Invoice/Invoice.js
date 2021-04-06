@@ -41,18 +41,18 @@ const Invoice = ({
                 <tbody>
                     <tr>
                         <td>Subtotal</td>
-                        <td>£579</td>
+                        <td>£579.00</td>
                     </tr>
                     <tr>
                         <td>Tax</td>
-                        <td>£100</td>
+                        <td>£100.00</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div className="invoice-total">
-            <label className="invoice-total--label">total : <span className="invoice-total--amount">£679</span></label>
+            <label className="invoice-total--label">total : <span className="invoice-total--amount">£679.00</span></label>
         </div>
     </div>
 }
