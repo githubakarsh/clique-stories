@@ -19,11 +19,10 @@ const Invoice = ({
                     return parseInt(sum)+parseInt(current);
                 });
                 caltotal(parseInt(tot)+parseInt(tax));
-                return tot;
+                return  tot;
             }
         }, 0)
     });
-    
     return <div className="invoice-main">
         <div className="invoice-title">
             <label className="invoice-header">invoice 
@@ -56,7 +55,7 @@ const Invoice = ({
                 <tbody>
                     <tr>
                         <td>Subtotal</td>
-                        <td>£{subTotal}</td>
+                        <td>{(subTotal)}</td>
                     </tr>
                     <tr>
                         <td>Tax</td>
