@@ -1,16 +1,25 @@
 import "./sidebar.scss";
+import { sidebarMenuItems } from '../../constants/constants';
+import PropTypes from 'prop-types';
 
-const Sidebar = ({}) => {
+const Sidebar = ({menuItemList}) => {
   return (
     <nav className="sidebar-nav">
       <ul className="sidebar-list">
-        <li>Side bar 1</li>
-        <li>Side bar 2</li>
-        <li>Side bar 3</li>
-        <li>Side bar 4</li>
+        {menuItemList?.map(menuList => {
+          return <li>{menuList}</li>
+        })}
       </ul>
     </nav>
   );
 };
+
+Sidebar.propTypes = {
+  menuItemList: PropTypes.array,
+}
+
+Sidebar.defaultProps = {
+  menuItemList: ['Page1' ,'Page2', 'Page 3'],
+}
 
 export default Sidebar;

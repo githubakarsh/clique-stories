@@ -2,7 +2,7 @@ import Invoice from '../components/Invoice/Invoice';
 
 
 export default {
-    title: "components/Invoice",
+    title: "Pages/Invoice",
     Component : Invoice,
 }
 

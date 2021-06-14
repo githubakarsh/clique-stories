@@ -1,7 +1,7 @@
 import Title from "../components/Title/Title";
 
 export default {
-    title: 'Components/Title',
+    title: 'Atom/Title',
     component: Title,
 }
 

@@ -3,14 +3,16 @@ import React from 'react';
 import { Button } from '../components/Button/Button';
 
 export default {
-  title: 'Components/Button',
+  title: 'Atom/Button',
   component: Button,
 };
 
 const Template = (args) => <Button {...args} />;
 
-export const ButtonExample = Template.bind({});
-ButtonExample.args = {
+export const PrimaryButton = Template.bind({});
+
+PrimaryButton.args = {
   variant: 'primary',
-  buttonName: 'Button',
+  buttonName: 'Primary',
 };
+

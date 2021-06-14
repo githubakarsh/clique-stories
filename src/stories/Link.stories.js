@@ -2,7 +2,7 @@ import Link from "../components/Link/Link";
 
 
 export default {
-    title: 'Components/Link',
+    title: 'Atom/Link',
     component: Link
 }
 

@@ -2,7 +2,7 @@ import Card from "../components/Card/Card";
 
 
 export default {
-    title: 'Components/Card',
+    title: 'Organism/Card',
     component: Card,
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import InputField from '../components/Inputfield/Inputfield';
 
 export default {
-  title: 'Components/Textarea',
+  title: 'Atom/Textarea',
   component: InputField,
 };
 

@@ -2,7 +2,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import React from 'react';
 
 export default {
-    title: 'Components/Sidebar',
+    title: 'Molecule/Sidebar',
     component: Sidebar,
 }
 

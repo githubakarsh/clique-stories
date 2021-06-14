@@ -1,9 +1,10 @@
 .sidebar-nav {
-    width: 350px;
+    width: 280px;
     padding: 0;
     font-size: 18px;
-    background-color: #E8E8E8;
+    background-color: white;
     height: 100vh;
+    border-right: 1px solid lightgray;
 }
 
 .sidebar-list {
@@ -11,7 +12,7 @@
     list-style-type: none;
     cursor: pointer;
     li {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid lightgray;
         padding-left: 10px;
         padding-top: 12px;
         padding-bottom: 8px;

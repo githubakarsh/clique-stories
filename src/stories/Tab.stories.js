@@ -1,7 +1,7 @@
 import TabComponent from "../components/Tab/TabComponent";
 
 export default {
-    title: 'Components/Tab',
+    title: 'Organism/Tab',
     Component: TabComponent,
 };
 

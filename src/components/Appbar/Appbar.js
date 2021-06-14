@@ -1,4 +1,5 @@
 import './appbar.scss';
+import PropTypes from 'prop-types';
 
 const Appbar = ({
     name
@@ -17,5 +18,9 @@ const Appbar = ({
         </nav>
     </header>
 }
+
+Appbar.propTypes = {
+    name: PropTypes.string,
+};
 
 export default Appbar;

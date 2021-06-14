@@ -19,7 +19,7 @@ export const Button = ({ variant, size, buttonName, ...props }) => {
 };
 
 Button.propTypes = {
-  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  size: PropTypes.oneOf(['sm', 'md', 'lg', 'xswide', 'swide' ]),
   variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']),
   buttonName: PropTypes.string.isRequired,
   onClick: PropTypes.func,

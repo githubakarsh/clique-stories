@@ -1,11 +1,54 @@
+
+
 .input-field-comp {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid black;
+    border: 1px solid lightgray;
+    border-radius: 10px;
     width: 300px;
     height: 25px;
     font-size: 18px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+
+    &--primary {
+        color: #004085;
+        background-color: #cce5ff;
+        border:1px solid #b8daff;
+    }
+
+    &--secondary {
+        color: #383d41;
+    background-color: #e2e3e5;
+    border:1px solid  #d6d8db;
+    }
+
+    &--success {
+        color: #155724;
+    background-color: #d4edda;
+    border:1px solid  #c3e6cb;
+    }
+
+    &--danger {
+        color: #721c24;
+    background-color: #f8d7da;
+    border:1px solid  #f5c6cb;
+    }
+
+    &--warning {
+        color: #856404;
+    background-color: #fff3cd;
+    border:1px solid  #ffeeba;
+    }
+
+    
+
+    &--dark {
+        color: #1b1e21;
+        background-color: #d6d8d9;
+        border:1px solid  #c6c8ca;
+    }
+
 }
