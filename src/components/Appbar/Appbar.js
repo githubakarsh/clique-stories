@@ -1,3 +1,4 @@
+import React from 'react';
 import './appbar.scss';
 import PropTypes from 'prop-types';
 

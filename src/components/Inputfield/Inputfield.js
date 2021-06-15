@@ -1,4 +1,5 @@
 import './inputfield.scss';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const InputField = ({
@@ -13,7 +14,7 @@ const InputField = ({
     variant
 }) => {
     const mode = variant  && `input-field-comp--${variant}`;
-    return <>
+    return <div>
     <input 
         className={mode ? ['input-field-comp', mode].join(' '): 'input-field-comp'}
         type={type}
@@ -25,7 +26,7 @@ const InputField = ({
         placeholder={placeholder}
         disabled={disabled}
         />
-    </>;
+    </div>;
 }
 
 InputField.propTypes = {

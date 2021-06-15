@@ -1,5 +1,5 @@
 
-
+import React from 'react';
 import './downloadlink.scss';
 import { PropTypes } from 'prop-types';
 

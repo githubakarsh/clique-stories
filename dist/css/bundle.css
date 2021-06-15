@@ -1,0 +1,258 @@
+.button-link {
+  border: 2px solid #214fc6;
+  padding: 8px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 25px;
+  text-align: center;
+  color: #545aa7;
+  text-decoration: none; }
+
+.button-link:hover {
+  cursor: pointer; }
+
+.container {
+  text-align: center;
+  margin-top: 30px; }
+
+.accordion {
+  max-width: 600px;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  color: gray; }
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between; }
+
+.accordion-content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  word-wrap: break-word; }
+
+.accordion-title-heading {
+  font-weight: 600; }
+
+.card-main {
+  padding: 25px 40px 18px 24px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 0px lightgray;
+  background-color: white !important; }
+  .card-main--lg {
+    width: 80%; }
+  .card-main--md {
+    width: 60%; }
+  .card-main--sm {
+    width: 40%; }
+  .card-main--xsm {
+    width: 25%; }
+  .card-main--primary {
+    color: #004085;
+    background-color: #cce5ff !important;
+    box-shadow: 0px 4px 8px 0px #b8daff; }
+  .card-main--secondary {
+    color: #383d41;
+    background-color: #e2e3e5 !important;
+    box-shadow: 0px 4px 8px 0px #d6d8db; }
+  .card-main--success {
+    color: #155724;
+    background-color: #d4edda !important;
+    box-shadow: 0px 4px 8px 0px #c3e6cb; }
+  .card-main--danger {
+    color: #721c24;
+    background-color: #f8d7da !important;
+    box-shadow: 0px 4px 8px 0px #f5c6cb; }
+  .card-main--warning {
+    color: #856404;
+    background-color: #fff3cd !important;
+    box-shadow: 0px 4px 8px 0px #ffeeba; }
+  .card-main--info {
+    color: #0c5460;
+    background-color: #d1ecf1 !important;
+    box-shadow: 0px 4px 8px 0px #bee5eb; }
+  .card-main--dark {
+    color: #1b1e21;
+    background-color: #d6d8d9 !important;
+    box-shadow: 0px 4px 8px 0px #c6c8ca; }
+
+.card-content {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 22px; }
+
+.card-footer {
+  padding-bottom: 15px;
+  font-size: 20px; }
+
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 1; }
+  .storybook-button--primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff; }
+  .storybook-button--secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border: 1px solid  #d6d8db; }
+  .storybook-button--success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid  #c3e6cb; }
+  .storybook-button--danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid  #f5c6cb; }
+  .storybook-button--info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border: 1px solid  #bee5eb; }
+  .storybook-button--warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid  #ffeeba; }
+  .storybook-button--light {
+    color: #818182;
+    background-color: #fefefe;
+    border: 1px solid  #fdfdfe; }
+  .storybook-button--dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border: 1px solid  #c6c8ca; }
+  .storybook-button--exdark {
+    color: white;
+    background-color: #545aa7; }
+  .storybook-button--sm {
+    font-size: 12px;
+    padding: 10px 16px; }
+  .storybook-button--md {
+    font-size: 14px;
+    padding: 11px 20px; }
+  .storybook-button--lg {
+    font-size: 16px;
+    padding: 12px 24px; }
+  .storybook-button--xswide {
+    font-size: 18px;
+    padding: 14px 26px;
+    width: 25%; }
+  .storybook-button--swide {
+    font-size: 18px;
+    padding: 16px 18px;
+    width: 50%; }
+
+.button-icon {
+  font-weight: 700;
+  padding-left: 5px; }
+
+.date-of-birth {
+  display: flex; }
+  .date-of-birth input {
+    margin-right: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding-left: 10px; }
+
+.dob-day {
+  width: 40px; }
+
+.dob-month {
+  width: 40px; }
+
+.dob-year {
+  width: 70px; }
+
+.input-field-comp {
+  background-color: transparent;
+  border: none;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  width: 300px;
+  height: 25px;
+  font-size: 18px;
+  padding-left: 14px;
+  padding-top: 7px;
+  padding-bottom: 7px; }
+  .input-field-comp--primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff; }
+  .input-field-comp--secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border: 1px solid  #d6d8db; }
+  .input-field-comp--success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid  #c3e6cb; }
+  .input-field-comp--danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid  #f5c6cb; }
+  .input-field-comp--warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid  #ffeeba; }
+  .input-field-comp--dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border: 1px solid  #c6c8ca; }
+
+.snackbar-main {
+  padding-left: 15px;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  font-size: 20px;
+  border-radius: 8px; }
+  .snackbar-main--primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff; }
+  .snackbar-main--secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db; }
+  .snackbar-main--success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb; }
+  .snackbar-main--danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb; }
+  .snackbar-main--info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb; }
+  .snackbar-main--warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba; }
+  .snackbar-main--light {
+    color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe; }
+  .snackbar-main--dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca; }
+
+.back-next-button-container {
+  display: flex;
+  justify-content: space-between; }
+
+.content-container {
+  background-color: white !important;
+  position: relative;
+  left: 250px;
+  top: 30px; }

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import './snackbar.scss';
-import { createElement} from 'react';
+import React, { createElement} from 'react';
+
 
 const Snackbar = ({
     children,

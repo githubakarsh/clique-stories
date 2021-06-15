@@ -1,6 +1,8 @@
+import React from 'react';
 import "./sidebar.scss";
 import { sidebarMenuItems } from '../../constants/constants';
 import PropTypes from 'prop-types';
+
 
 const Sidebar = ({menuItemList}) => {
   return (

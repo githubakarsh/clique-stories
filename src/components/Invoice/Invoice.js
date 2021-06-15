@@ -1,3 +1,4 @@
+import React from 'react';
 import './invoice.scss';
 import { useState } from 'react';
 
