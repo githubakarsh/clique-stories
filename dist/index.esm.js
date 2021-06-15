@@ -1,5 +1,5 @@
-import React, { useState, createElement, createRef } from 'react';
-import PropTypes$1, { PropTypes } from 'prop-types';
+import React, { createElement, useState, createRef } from 'react';
+import PropTypes, { PropTypes as PropTypes$1 } from 'prop-types';
 import { Stepper, Step } from 'react-form-stepper';
 
 function ownKeys(object, enumerableOnly) {
@@ -168,82 +168,6 @@ function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-var DownloadLink = function DownloadLink(_ref) {
-  var hrefVal = _ref.hrefVal,
-      linkName = _ref.linkName,
-      target = _ref.target,
-      _onClick = _ref.onClick;
-  return /*#__PURE__*/React.createElement("div", {
-    class: "container"
-  }, /*#__PURE__*/React.createElement("a", {
-    className: "button-link",
-    href: hrefVal ? hrefVal : '#',
-    onClick: function onClick(e) {
-      return _onClick(e);
-    },
-    target: target
-  }, /*#__PURE__*/React.createElement("b", null, linkName)));
-};
-
-DownloadLink.propTypes = {
-  linkName: PropTypes.string.isRequired,
-  href: PropTypes.string,
-  target: PropTypes.string,
-  onClick: PropTypes.func
-};
-DownloadLink.defaultProps = {
-  href: "https://www.google.co.in",
-  linkName: "Download your voucher here" //onClick: alert("clicked link")
-
-};
-
-var accordionStubData = [{
-  title: 'Eligible Job Holder',
-  content: /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "dfnvksnfksjndfsdjfksndkfnksdkjfksdnfkjsndk"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "fbvjsvfhjbfhbvjbfvkbdjbvdbfjbvdbfhjvbdjfbvjhdbfjbvjdbfjbvdbvbfjbvjbdfbvdfbbvdhbvdfbvkdbf"), /*#__PURE__*/React.createElement("li", null, "bdjvsbhvbjfbvjhdfbjvbdjhbvjdbfjvbjdbfjvbdjfbjvdbjfbvjdhfbjvbdjhf"), /*#__PURE__*/React.createElement("li", null, "dbckjshgfhksjdhkfsdhfskdhfkhsdkhfksjdhfkhskdhfkhsdkfhksdhfkhskdhfk")), /*#__PURE__*/React.createElement(DownloadLink, null))
-}, {
-  title: 'Section 2',
-  content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam\n      reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis\n      quaerat iure quos dolorum accusantium ducimus in illum vero commodi\n      pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque\n      quidem maiores doloremque est numquam praesentium eos voluptatem amet!\n      Repudiandae, mollitia id reprehenderit a ab odit!"
-}, {
-  title: 'Section 3',
-  content: "Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti\n      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos\n      dolor ut sequi minus iste? Quas?"
-}];
-
-var Accordion = function Accordion(_ref) {
-  var title = _ref.title,
-      content = _ref.content;
-
-  var _useState = useState(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      isActive = _useState2[0],
-      setIsActive = _useState2[1];
-
-  return /*#__PURE__*/React.createElement("div", {
-    className: "accordion"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "accordion-item"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "accordion-title",
-    onClick: function onClick() {
-      return setIsActive(!isActive);
-    }
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
-    className: "accordion-title-heading"
-  }, title)), /*#__PURE__*/React.createElement("div", null, isActive ? '-' : '+')), isActive && /*#__PURE__*/React.createElement("div", {
-    className: "accordion-content"
-  }, content)));
-};
-
-var AccordionComponent = function AccordionComponent() {
-  return /*#__PURE__*/React.createElement(React.Fragment, null, accordionStubData.map(function (_ref2) {
-    var title = _ref2.title,
-        content = _ref2.content;
-    return /*#__PURE__*/React.createElement(Accordion, {
-      content: content,
-      title: title
-    });
-  }));
-};
-
 var _excluded = ["variant", "size", "buttonName", "iconLeft", "iconRight"];
 /**
  * Primary UI component for user interaction
@@ -264,12 +188,12 @@ var Button = function Button(_ref) {
   }, props), buttonName);
 };
 Button.propTypes = {
-  size: PropTypes$1.oneOf(['sm', 'md', 'lg', 'xswide', 'swide']),
-  variant: PropTypes$1.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'exdark']),
-  buttonName: PropTypes$1.string.isRequired,
-  onClick: PropTypes$1.func,
-  iconLeft: PropTypes$1.bool,
-  iconRight: PropTypes$1.bool
+  size: PropTypes.oneOf(['sm', 'md', 'lg', 'xswide', 'swide']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'exdark']),
+  buttonName: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  iconLeft: PropTypes.bool,
+  iconRight: PropTypes.bool
 };
 Button.defaultProps = {
   buttonName: 'Button Name',
@@ -311,8 +235,37 @@ Card.defaultProps = {
   variant: 'default'
 };
 Card.propTypes = {
-  size: PropTypes.oneOf(['xsm', 'sm', 'md', 'lg', 'xlg']),
-  variant: PropTypes.oneOf(['default', 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark'])
+  size: PropTypes$1.oneOf(['xsm', 'sm', 'md', 'lg', 'xlg']),
+  variant: PropTypes$1.oneOf(['default', 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark'])
+};
+
+var DownloadLink = function DownloadLink(_ref) {
+  var hrefVal = _ref.hrefVal,
+      linkName = _ref.linkName,
+      target = _ref.target,
+      _onClick = _ref.onClick;
+  return /*#__PURE__*/React.createElement("div", {
+    class: "container"
+  }, /*#__PURE__*/React.createElement("a", {
+    className: "button-link",
+    href: hrefVal ? hrefVal : '#',
+    onClick: function onClick(e) {
+      return _onClick(e);
+    },
+    target: target
+  }, /*#__PURE__*/React.createElement("b", null, linkName)));
+};
+
+DownloadLink.propTypes = {
+  linkName: PropTypes$1.string.isRequired,
+  href: PropTypes$1.string,
+  target: PropTypes$1.string,
+  onClick: PropTypes$1.func
+};
+DownloadLink.defaultProps = {
+  href: "https://www.google.co.in",
+  linkName: "Download your voucher here" //onClick: alert("clicked link")
+
 };
 
 var InputField = function InputField(_ref) {
@@ -340,13 +293,13 @@ var InputField = function InputField(_ref) {
 };
 
 InputField.propTypes = {
-  type: PropTypes$1.oneOf(['text', 'email', 'number', 'password']),
-  variant: PropTypes$1.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'dark']),
-  placeholder: PropTypes$1.string,
-  onClick: PropTypes$1.func,
-  onBlur: PropTypes$1.func,
-  length: PropTypes$1.number,
-  disabled: PropTypes$1.bool
+  type: PropTypes.oneOf(['text', 'email', 'number', 'password']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'dark']),
+  placeholder: PropTypes.string,
+  onClick: PropTypes.func,
+  onBlur: PropTypes.func,
+  length: PropTypes.number,
+  disabled: PropTypes.bool
 };
 InputField.defaultProps = {
   type: 'text',
@@ -363,7 +316,7 @@ var Snackbar = function Snackbar(_ref) {
 };
 
 Snackbar.propTypes = {
-  variant: PropTypes$1.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'])
+  variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'])
 };
 
 var DateOfBirth = function DateOfBirth() {
@@ -482,6 +435,43 @@ var BackNextButton = function BackNextButton(_ref) {
     onClick: function onClick(e) {
       return onClickNext(e);
     }
+  }));
+};
+
+var Accordion = function Accordion(_ref) {
+  var title = _ref.title,
+      content = _ref.content;
+
+  var _useState = useState(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      isActive = _useState2[0],
+      setIsActive = _useState2[1];
+
+  return /*#__PURE__*/React.createElement("div", {
+    className: "accordion"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "accordion-item"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "accordion-title",
+    onClick: function onClick() {
+      return setIsActive(!isActive);
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
+    className: "accordion-title-heading"
+  }, title)), /*#__PURE__*/React.createElement("div", null, isActive ? '-' : '+')), isActive && /*#__PURE__*/React.createElement("div", {
+    className: "accordion-content"
+  }, content)));
+};
+
+var AccordionComponent = function AccordionComponent(_ref2) {
+  var data = _ref2.data;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, data === null || data === void 0 ? void 0 : data.map(function (_ref3) {
+    var title = _ref3.title,
+        content = _ref3.content;
+    return /*#__PURE__*/React.createElement(Accordion, {
+      content: content,
+      title: title
+    });
   }));
 };
 

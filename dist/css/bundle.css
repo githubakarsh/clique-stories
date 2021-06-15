@@ -1,40 +1,3 @@
-.button-link {
-  border: 2px solid #214fc6;
-  padding: 8px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 25px;
-  text-align: center;
-  color: #545aa7;
-  text-decoration: none; }
-
-.button-link:hover {
-  cursor: pointer; }
-
-.container {
-  text-align: center;
-  margin-top: 30px; }
-
-.accordion {
-  max-width: 600px;
-  border: 2px solid lightgray;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  color: gray; }
-
-.accordion-title {
-  display: flex;
-  justify-content: space-between; }
-
-.accordion-content {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  word-wrap: break-word; }
-
-.accordion-title-heading {
-  font-weight: 600; }
-
 .card-main {
   padding: 25px 40px 18px 24px;
   border-radius: 8px;
@@ -85,6 +48,30 @@
 .card-footer {
   padding-bottom: 15px;
   font-size: 20px; }
+
+.date-of-birth {
+  display: flex; }
+  .date-of-birth input {
+    margin-right: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding-left: 10px; }
+
+.dob-day {
+  width: 40px; }
+
+.dob-month {
+  width: 40px; }
+
+.dob-year {
+  width: 70px; }
+
+.content-container {
+  background-color: white !important;
+  position: relative;
+  left: 250px;
+  top: 30px; }
 
 .storybook-button {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -154,23 +141,25 @@
   font-weight: 700;
   padding-left: 5px; }
 
-.date-of-birth {
-  display: flex; }
-  .date-of-birth input {
-    margin-right: 20px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid lightgray;
-    padding-left: 10px; }
+.accordion {
+  max-width: 600px;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  color: gray; }
 
-.dob-day {
-  width: 40px; }
+.accordion-title {
+  display: flex;
+  justify-content: space-between; }
 
-.dob-month {
-  width: 40px; }
+.accordion-content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  word-wrap: break-word; }
 
-.dob-year {
-  width: 70px; }
+.accordion-title-heading {
+  font-weight: 600; }
 
 .input-field-comp {
   background-color: transparent;
@@ -207,6 +196,10 @@
     color: #1b1e21;
     background-color: #d6d8d9;
     border: 1px solid  #c6c8ca; }
+
+.back-next-button-container {
+  display: flex;
+  justify-content: space-between; }
 
 .snackbar-main {
   padding-left: 15px;
@@ -247,12 +240,19 @@
     background-color: #d6d8d9;
     border-color: #c6c8ca; }
 
-.back-next-button-container {
-  display: flex;
-  justify-content: space-between; }
+.button-link {
+  border: 2px solid #214fc6;
+  padding: 8px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 25px;
+  text-align: center;
+  color: #545aa7;
+  text-decoration: none; }
 
-.content-container {
-  background-color: white !important;
-  position: relative;
-  left: 250px;
-  top: 30px; }
+.button-link:hover {
+  cursor: pointer; }
+
+.container {
+  text-align: center;
+  margin-top: 30px; }

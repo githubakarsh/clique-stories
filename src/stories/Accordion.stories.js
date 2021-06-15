@@ -1,12 +1,17 @@
 import React from "react";
 import AccordionComponent from '../components/molecule/accordion/Accordion';
 
+// export default {
+//     title: 'Molecule/Accordion',
+//     component: AccordionComponent,
+// }
 
-
-export default {
+const MetaData = {
     title: 'Molecule/Accordion',
     component: AccordionComponent,
 }
+
+export default MetaData;
 
 const Template = (args) => <AccordionComponent {...args}/>;
 
