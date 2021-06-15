@@ -1,0 +1,20 @@
+.date-of-birth {
+    display: flex;
+    input {
+        margin-right: 20px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        padding-left: 10px;
+    }
+}
+
+.dob-day {
+    width : 40px;
+}
+.dob-month {
+    width: 40px;
+}
+.dob-year {
+    width: 70px;
+}

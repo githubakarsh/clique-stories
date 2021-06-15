@@ -1,6 +1,5 @@
-import { createElement } from 'react';
+import React,{ createElement } from 'react';
 import './title.scss';
-
 import PropTypes from 'prop-types';
 
 const Title = ({

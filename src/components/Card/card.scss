@@ -1,7 +1,8 @@
 .card-main {
-  padding: 25px 10px 18px 24px;
+  padding: 25px 40px 18px 24px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px 0px lightgray;
+  background-color: white !important;
 
   &--lg {
     width: 80%;
@@ -18,37 +19,37 @@
 
   &--primary {
     color: #004085;
-    background-color: #cce5ff;
+    background-color: #cce5ff !important;
     box-shadow: 0px 4px 8px 0px #b8daff;
   }
   &--secondary {
     color: #383d41;
-    background-color: #e2e3e5;
+    background-color: #e2e3e5 !important;
     box-shadow: 0px 4px 8px 0px #d6d8db;
   }
   &--success {
     color: #155724;
-    background-color: #d4edda;
+    background-color: #d4edda !important;
     box-shadow: 0px 4px 8px 0px #c3e6cb;
   }
   &--danger {
     color: #721c24;
-    background-color: #f8d7da;
+    background-color: #f8d7da !important;
     box-shadow: 0px 4px 8px 0px #f5c6cb;
   }
   &--warning {
     color: #856404;
-    background-color: #fff3cd;
+    background-color: #fff3cd !important;
     box-shadow: 0px 4px 8px 0px #ffeeba;
   }
   &--info {
     color: #0c5460;
-    background-color: #d1ecf1;
+    background-color: #d1ecf1 !important;
     box-shadow: 0px 4px 8px 0px #bee5eb;
   }
   &--dark {
     color: #1b1e21;
-    background-color: #d6d8d9;
+    background-color: #d6d8d9 !important;
     box-shadow: 0px 4px 8px 0px #c6c8ca;
   }
 }

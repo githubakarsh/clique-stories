@@ -1,6 +1,6 @@
 import './link.scss';
 
-import { createElement } from 'react';
+import React, { createElement } from 'react';
 import PropTypes from 'prop-types';
 
 

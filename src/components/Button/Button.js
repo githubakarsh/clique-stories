@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AiOutlineArrowRight } from "react-icons/ai";
 import './button.scss';
 
 /**
@@ -14,9 +13,7 @@ export const Button = ({ variant, size, buttonName, iconLeft, iconRight, ...prop
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       {...props}
     >
-      {iconLeft && <span className='button-icon'><b><AiOutlineArrowRight /></b></span>}
       {buttonName}
-      {iconRight && <span className='button-icon'><b><AiOutlineArrowRight /></b></span>}
     </button>
   );
 };

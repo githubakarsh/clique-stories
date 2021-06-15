@@ -1,17 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Button } from './components/Button/Button';
+import Card from './components/Card/Card';
+import DownloadLink from "./components/downloadLink/DownloadLink";
+import InputField from './components/Inputfield/Inputfield';
+import Snackbar from './components/Snackbar/Snackbar';
+import DateOfBirth from './components/dateOfBirth/DateOfBirth';
+import StepperComponent from './components/stepper/Stepper';
+import Container from './components/organisms/container/Container';
+import BackNextButton from './components/Atom/backNext/BackNextButton';
+import AccordionComponent from './components/molecule/accordion/Accordion';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export {
+  AccordionComponent,
+  Button,
+  Card,
+  DownloadLink,
+  InputField,
+  Snackbar,
+  DateOfBirth,
+  StepperComponent,
+  Container,
+  BackNextButton
+}
