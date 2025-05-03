@@ -1,15 +1,17 @@
 {
-  "name" : "clique-comp-lib",
+  "name": "clique-comp-lib",
   "dependencies": {
     "@storybook/addon-interactions": "^8.6.12",
     "@storybook/addon-links": "^8.6.12",
     "@storybook/addons": "^7.6.17",
+    "classnames": "^2.5.1",
+    "cn": "^0.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "publishConfig": {
-  "registry": "https://npm.pkg.github.com"
-},
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "scripts": {
     "build": "rollup -c",
