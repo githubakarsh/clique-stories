@@ -1,5 +1,5 @@
 {
-  "name": "clique-comp-lib",
+  "name": "@akarshsaraff/clique-comp-lib",
   "dependencies": {
     "@storybook/addon-interactions": "^8.6.12",
     "@storybook/addon-links": "^8.6.12",
@@ -36,5 +36,21 @@
     "rollup": "^4.40.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "storybook": "^8.6.12"
-  }
+  },
+  "version": "1.0.0",
+  "description": "web components",
+  "main": "rollup.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubakarsh/clique-stories.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "akarsh saraff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/githubakarsh/clique-stories/issues"
+  },
+  "homepage": "https://github.com/githubakarsh/clique-stories#readme"
 }

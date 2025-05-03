@@ -1,19 +1,17 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import './anchor.css';
+
+import './divider.css';
 
 /** Primary UI component for user interaction */
-export const Anchor = ({
-  href,
-  name,
-  ...props
+export const Divider = ({
 }) => {
   return (
-    <a className="anchor-main" href={href} {...props}>{name}</a>
+    < hr />
   );
 };
 
-Anchor.propTypes = {
+Divider.propTypes = {
   /** Is this the principal call to action on the page? */
 };

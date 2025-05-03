@@ -1,19 +1,16 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import './anchor.css';
+
+import './avatar.css';
 
 /** Primary UI component for user interaction */
-export const Anchor = ({
-  href,
-  name,
-  ...props
+export const Avatar = ({
+  src
 }) => {
-  return (
-    <a className="anchor-main" href={href} {...props}>{name}</a>
-  );
+  return <img src={src} alt="Avatar" className="avatar"></img>
 };
 
-Anchor.propTypes = {
+Avatar.propTypes = {
   /** Is this the principal call to action on the page? */
 };
